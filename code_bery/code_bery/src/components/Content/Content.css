@@ -1,0 +1,90 @@
+.catalog {
+  padding: 20px 24px;
+  background: #f6f6fa;
+  min-height: calc(100vh - 80px);
+}
+
+.emptyState {
+  margin: 6px 0 14px;
+  color: #6d6d77;
+  font-size: 14px;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 14px;
+}
+
+.productCard {
+  background: #fff;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 2px 12px rgba(18, 18, 23, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.productCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(18, 18, 23, 0.12);
+}
+
+.cardImageWrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #faf8ff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.cardImage {
+  width: 78%;
+  height: 78%;
+  object-fit: contain;
+}
+
+.cardPrice {
+  margin: 0;
+  color: #c01889;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.cardOldPrice {
+  margin: 2px 0 8px;
+  color: #8f8f99;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.cardTitle {
+  margin: 0 0 4px;
+  color: #272734;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.cardMeta,
+.cardRating {
+  margin: 0 0 6px;
+  color: #6d6d77;
+  font-size: 13px;
+}
+
+.buyBtn {
+  width: 100%;
+  border: 0;
+  border-radius: 9px;
+  background: linear-gradient(90deg, #a90086, #d50b85);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.buyBtn:hover {
+  filter: brightness(1.05);
+}
